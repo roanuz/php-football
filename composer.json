@@ -1,0 +1,29 @@
+{
+    "name": "roanuz/php-football",
+    "description": "This is php-football library to show Live Football Scores.",
+    "authors": [
+        {
+            "name": "Roanuz Football API",
+            "homepage": "https://www.footballapi.com/"
+        }
+    ],
+    "support": {
+        "email": "support@cricketapi.com"
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "PhpFootball": "src/"
+        }
+    },
+    "license": "Apache-2.0",
+    "repositories": [
+        {
+            "url": "https://github.com/roanuz/php-football.git",
+            "type": "git"
+        }
+    ]
+}
