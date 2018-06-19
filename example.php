@@ -9,31 +9,31 @@ $phpFootball = new PhpFootball\PhpFootballLib('YOUR_ACCESS_KEY', 'YOUR_SECRET_KE
 *
 */
 /* Get Match Details */
-// $getMatch = $phpFootball->getMatch('1002227292686127105');
+// $getMatch = $phpFootball->getMatch('MATCH_KEY');
 // echo json_encode($getMatch);
 
 /* Get Tournament Details */
-// $getTournament = $phpFootball->getTournament('1002227289901109249');
+// $getTournament = $phpFootball->getTournament('TOURNAMENT_KEY');
 // echo json_encode($getTournament);
 
 /* Get Tournament Team Details */
-// $getTournamentTeam = $phpFootball->getTournamentTeam('1002227289901109249','1002227289360044045');
+// $getTournamentTeam = $phpFootball->getTournamentTeam('TOURNAMENT_KEY','TEAM_KEY');
 // echo json_encode($getTournamentTeam);
 
 /* Get Tournament Round Details */
-// $getTournamentRound = $phpFootball->getTournamentRound('1002227289901109249','1002227290739970049');
+// $getTournamentRound = $phpFootball->getTournamentRound('TOURNAMENT_KEY','ROUND_KEY');
 // echo json_encode($getTournamentRound);
 
 /* Get Tournament Stats Details */
-// $getTournamentStats = $phpFootball->getTournamentStats('1002227289901109249');
+// $getTournamentStats = $phpFootball->getTournamentStats('TOURNAMENT_KEY');
 // echo json_encode($getTournamentStats);
 
 /* Get Tournament Team Stats Details */
-// $getTournamentTeamStats = $phpFootball->getTournamentTeamStats('1002227289901109249','1002227289360044045');
+// $getTournamentTeamStats = $phpFootball->getTournamentTeamStats('TOURNAMENT_KEY','TEAM_KEY');
 // echo json_encode($getTournamentTeamStats);
 
 /* Get Tournament Player Stats Details */
-// $getTournamentPlayerStats = $phpFootball->getTournamentPlayerStats('1002227289901109249','1003604635140886535');
+// $getTournamentPlayerStats = $phpFootball->getTournamentPlayerStats('TOURNAMENT_KEY','PLAYER_KEY');
 // echo json_encode($getTournamentPlayerStats);
 
 /* Get Schedule */
@@ -42,7 +42,7 @@ $phpFootball = new PhpFootball\PhpFootballLib('YOUR_ACCESS_KEY', 'YOUR_SECRET_KE
 // echo json_encode($getSchedule);
 
 /* Get Tournament Schedule */
-// $getTournamentSchedule = $phpFootball->getTournamentSchedule('1002227289901109249');
+// $getTournamentSchedule = $phpFootball->getTournamentSchedule('TOURNAMENT_KEY');
 // echo json_encode($getTournamentSchedule);
 
 /* Get Recent Schedule */
@@ -50,13 +50,13 @@ $phpFootball = new PhpFootball\PhpFootballLib('YOUR_ACCESS_KEY', 'YOUR_SECRET_KE
 // echo json_encode($getRecentTournament);
 
 /* Get Matches in Round */
-// $getTournamentMatches = $phpFootball->getTournamentMatches('1002227289901109249','1002227290739970049');
+// $getTournamentMatches = $phpFootball->getTournamentMatches('TOURNAMENT_KEY','ROUND_KEY');
 // echo json_encode($getTournamentMatches);
 
 /* Get Matches in Round */
-// $getRecentTournamentMatches = $phpFootball->getRecentTournamentMatches('1002227289901109249');
+// $getRecentTournamentMatches = $phpFootball->getRecentTournamentMatches('TOURNAMENT_KEY');
 // echo json_encode($getRecentTournamentMatches);
 
 /* Get Tournament Standings */
-// $getTournamentStandings = $phpFootball->getTournamentStandings('1002227289901109249');
+// $getTournamentStandings = $phpFootball->getTournamentStandings('TOURNAMENT_KEY');
 // echo json_encode($getTournamentStandings);
