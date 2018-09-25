@@ -66,21 +66,21 @@ php-football library for using Roanuz Football API in any website or web-app wri
    
    Dive in to this file. [Example Code to Access Roanuz Football API](https://github.com/roanuz/php-football/blob/master/example.php)
 
-### Here is List of Roanuz Football API's
+### Here is the list of Roanuz Football API's
 
-* [Match API](https://www.footballapi.com/)
-* [Tournament API](https://www.footballapi.com/)
-* [Tournament Team API](https://www.footballapi.com/)
-* [Tournament Round API](https://www.footballapi.com/)
-* [Tournament Stats API](https://www.footballapi.com/)
-* [Tournament Team Stats API](https://www.footballapi.com/)
-* [Tournament Player Stats API](https://www.footballapi.com/)
-* [Schedule API](https://www.footballapi.com/)
-* [Tournament Schedule API](https://www.footballapi.com/)
-* [Recent Tournaments API](https://www.footballapi.com/)
-* [Round Matches API](https://www.footballapi.com/)
-* [Recent Tournament Matches API](https://www.footballapi.com/)
-* [Tournament Standings API](https://www.footballapi.com/)
+* [Match API](https://www.footballapi.com/football/docs/Core-API/Match-API/)
+* [Tournament API](https://www.footballapi.com/football/docs/Core-API/Tournament-API/)
+* [Tournament Team API](https://www.footballapi.com/football/docs/Core-API/Tournament-Team-API/)
+* [Tournament Round API](https://www.footballapi.com/football/docs/Core-API/Tournament-Round-API/)
+* [Tournament Stats API](https://www.footballapi.com/football/docs/Core-API/Tournament-Stats-API/)
+* [Tournament Team Stats API](https://www.footballapi.com/football/docs/Core-API/Team-Stats-API/)
+* [Tournament Player Stats API](https://www.footballapi.com/football/docs/Core-API/Player-Stats-API/)
+* [Schedule API](https://www.footballapi.com/football/docs/Core-API/Schedule-API/)
+* [Tournament Schedule API](https://www.footballapi.com/football/docs/Core-API/Tournament-Schedule-API/)
+* [Recent Tournaments API](https://www.footballapi.com/football/docs/Core-API/Recent-Tournament-API/)
+* [Matches in Round API](https://www.footballapi.com/football/docs/Core-API/Matches-Round-API/)
+* [Recent Tournament Matches API](https://www.footballapi.com/football/docs/Core-API/Tournament-Live-Matches-API/)
+* [Tournament Standings API](https://www.footballapi.com/football/docs/Core-API/Points-Table-API/)
 
 ## Roanuz Football API
 This Library uses the Roanuz Football API for fetching football scores and stats. Feel free to contact their amazing support team, if you fave any query or doubt.
