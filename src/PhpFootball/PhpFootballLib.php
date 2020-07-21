@@ -19,7 +19,6 @@ namespace PhpFootball;
 *
 */
 define('RFA_url', 'https://api.footballapi.com/v1/');
-
 class PhpFootballLib {
 	private $access_token;
 	private $credentials;
@@ -300,5 +299,52 @@ class PhpFootballLib {
 		$response = $this->getData($url);
 		return $response;
 	}
+
+
+	/**
+	* Fantasy Credit points API:
+	* getFantasyCreditPoints function
+	* This function provides fantasy credit Point Details of a match.
+	* @param $match_key 			Key of match to show match details.
+	*/
+	function getFantasyCreditPoints($match_key, $model){
+		$fields = array(
+			'model' => $model
+		);
+		$url = 'fantasy-match-credits/' .$match_key;
+		$response = $this->getData($url,$fields);
+		return $response;
+	}
+
+	/**
+	* Fantasy Match Credit variation API:
+	* getFantasyMatchCreditVariation function
+	* This function provides fantasy Match credit Variation Details.
+	* @param $match_key 			Key of match to show match details.
+	*/
+	function getFantasyMatchCreditVariation($match_key,$model){
+		$fields = array(
+			'model' => $model
+		);
+		$url = 'fantasy-match-credits-variation/' .$match_key;
+		$response = $this->getData($url);
+		return $response;
+	}
+
+	/**
+	* Fantasy Match Point API:
+	* getFantasyMatchPoint function
+	* This function provides fantasy Match Point Details.
+	* @param $match_key 			Key of match to show match details.
+	*/
+	function getFantasyMatchPoint($match_key,$model){
+		$fields = array(
+			'model' => $model
+		);
+		$url = 'fantasy-match-credits-variation/' .$match_key;
+		$response = $this->getData($url);
+		return $response;
+	}
+
 
 }
