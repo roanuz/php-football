@@ -47,7 +47,7 @@ class PhpFootballLib {
 	*
 	* This function will get the provide valid token, and save it in accesstoken.txt file.
 	* This access token will be automatically passed to getData() to get the response.
-	*
+	*@link https://footballapi.com/docs/Core-API/Auth-API/
 	*/
 	public function saveAccessKey(){
 		//Encode the Credentials into JSON.
@@ -136,7 +136,7 @@ class PhpFootballLib {
 	* This function provides full details of a match.
 	*
 	* @param $match_key 			Key of match to show the Match details.
-	*
+	*@link https://footballapi.com/docs/Core-API/Match-API/
 	*/
 	function getMatch($match_key){
 		$url = 'match/' .$match_key;
@@ -149,6 +149,7 @@ class PhpFootballLib {
 	* getTournament function
 	* This function provides full details of a Tournament.
 	* @param $tournament_key 			Key of match to show the Match details.
+	* @link https://footballapi.com/docs/Core-API/Tournament-API/
 	*/
 	function getTournament($tournament_key){
 		$url = 'tournament/' .$tournament_key;
@@ -162,6 +163,7 @@ class PhpFootballLib {
 	* This function provides the team details of a Tournament.
 	* @param $tournament_key 			Key of tournament to show the Tournament details.
 	* @param $team_key 					Key of team to show the tournament team details.
+	* @link https://footballapi.com/docs/Core-API/Tournament-API/
 	*/
 	function getTournamentTeam($tournament_key,$team_key){
 		$url = 'tournament/' .$tournament_key.'/team/'.$team_key;
@@ -175,6 +177,7 @@ class PhpFootballLib {
 	* This function provides full details of rounds of a tournament.
 	* @param $tournament_key 			Key of tournament to show the Tournament details.
 	* @param $round_key 				Key of round to show the tournament round details.
+	* @link https://footballapi.com/docs/Core-API/Tournament-Round-API/
 	*/
 	function getTournamentRound($tournament_key,$round_key){
 		$url = 'tournament/' .$tournament_key.'/round/'.$round_key;
@@ -187,6 +190,7 @@ class PhpFootballLib {
 	* getTournamentStats function
 	* This function provides full tournament statistics.
 	* @param $tournament_key 			Key of tournament to show the Tournament details.
+	* @link https://footballapi.com/docs/Core-API/Tournament-Stats-API/
 	*/
 	function getTournamentStats($tournament_key){
 		$url = 'tournament/' .$tournament_key.'/stats';
@@ -200,6 +204,7 @@ class PhpFootballLib {
 	* This function provides Statistics of Team for a tournament.
 	* @param $tournament_key 			Key of tournament to show the Tournament details.
 	* @param $team_key 					Key of team to show the Tournament Team details.
+	* @link https://footballapi.com/docs/Core-API/Tournament-Team-Stats-API/
 	*/
 	function getTournamentTeamStats($tournament_key,$team_key){
 		$url = 'tournament/' .$tournament_key.'/team/'.$team_key.'/stats';
@@ -213,22 +218,10 @@ class PhpFootballLib {
 	* This function provides player statistics of a tournament.
 	* @param $tournament_key 			Key of tournament to show the Tournament details.
 	* @param $player_key 				Key of player to show the Tournament Player Stats.
+	* @link https://footballapi.com/docs/Core-API/Tournament-Player-Stats-API/
 	*/
 	function getTournamentPlayerStats($tournament_key,$player_key){
 		$url = 'tournament/' .$tournament_key.'/player/'.$player_key.'/stats';
-		$response = $this->getData($url);
-		return $response;
-	}
-
-
-	/**
-	* Tournament Schedule API:
-	* getTournamentSchedule function
-	* This function provides full tournament Schedule.
-	* @param $tournament_key 			Key of tournament to show the Tournament details.
-	*/
-	function getTournamentSchedule($tournament_key){
-		$url = 'tournament/' .$tournament_key.'/schedule';
 		$response = $this->getData($url);
 		return $response;
 	}
@@ -237,6 +230,7 @@ class PhpFootballLib {
 	* Recent Tournament API:
 	* getRecentTournament function
 	* This function provides full details of recent tournament.
+	* @link https://footballapi.com/docs/Core-API/Recent-Tournament-API/
 	*/
 	function getRecentTournament(){
 		$url = 'recent_tournaments';
@@ -250,21 +244,10 @@ class PhpFootballLib {
 	* This function provides tournament match details.
 	* @param $tournament_key 			Key of tournament to show the Tournament details.
 	* @param $round_key 				Key of round to show the tournament round details.
+	* @link https://footballapi.com/docs/Core-API/Tournament-Live-Matches-API/
 	*/
 	function getTournamentMatches($tournament_key,$round_key){
 		$url = 'tournament/' .$tournament_key.'/matches/'.$round_key;
-		$response = $this->getData($url);
-		return $response;
-	}
-
-	/**
-	* Recent Tournament Matches API:
-	* getRecentTournamentMatches function
-	* This function provides full details of recent tournament matches.
-	* @param $tournament_key 			Key of tournament to show the Tournament details.
-	*/
-	function getRecentTournamentMatches($tournament_key){
-		$url = 'tournament/' .$tournament_key.'/matches';
 		$response = $this->getData($url);
 		return $response;
 	}
@@ -274,6 +257,7 @@ class PhpFootballLib {
 	* getTournamentStandings function
 	* This function provides Point Details of a tournament.
 	* @param $tournament_key 			Key of tournament to show the Tournament details.
+	* @link https://footballapi.com/docs/Core-API/Tournament-Points-Table-API/
 	*/
 	function getTournamentStandings($tournament_key){
 		$url = 'tournament/' .$tournament_key.'/standings';
@@ -287,6 +271,7 @@ class PhpFootballLib {
 	* getFantasyCreditPoints function
 	* This function provides fantasy credit Point Details of a match.
 	* @param $match_key 			Key of match to show match details.
+	* @link https://footballapi.com/docs/Core-API/Fantasy-Credit-Points-API/
 	*/
 	function getFantasyCreditPoints($match_key, $model){
 		$fields = array(
@@ -302,6 +287,7 @@ class PhpFootballLib {
 	* getFantasyMatchCreditVariation function
 	* This function provides fantasy Match credit Variation Details.
 	* @param $match_key 			Key of match to show match details.
+	* @link https://footballapi.com/docs/Core-API/Fantasy-Credit-Variation-API/
 	*/
 	function getFantasyMatchCreditVariation($match_key,$model){
 		$fields = array(
@@ -317,6 +303,7 @@ class PhpFootballLib {
 	* getFantasyMatchPoint function
 	* This function provides fantasy Match Point Details.
 	* @param $match_key 			Key of match to show match details.
+	* @link https://footballapi.com/docs/Core-API/Fantasy-Match-Points-API/
 	*/
 	function getFantasyMatchPoint($match_key,$model){
 		$fields = array(
