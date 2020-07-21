@@ -36,10 +36,6 @@ $phpFootball = new PhpFootball\PhpFootballLib('ACCESS_KEY', 'SECRET_KEY', 'APP_I
 // $getTournamentPlayerStats = $phpFootball->getTournamentPlayerStats('1214777636782477313','1002227290479923221');
 // echo json_encode($getTournamentPlayerStats);
 
-/* Get Schedule */
-// $getSchedule = $phpFootball->getSchedule();
-// $getSchedule = $phpFootball->getSchedule('2018-05');
-// echo json_encode($getSchedule);
 
 /* Get Tournament Schedule */
 // $getTournamentSchedule = $phpFootball->getTournamentSchedule('1214777636782477313');

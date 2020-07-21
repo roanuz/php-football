@@ -220,25 +220,6 @@ class PhpFootballLib {
 		return $response;
 	}
 
-	/**
-	* Schedule API:
-	* getSchedule function
-	* This function provides full match schedule for a match.
-	* @param $month(Optional)			Month for which you want to know the Schedule.
-	* Example: 2018-05
-	*/
-	function getSchedule($month=""){
-		$url = 'schedule';
-		if(!empty($month)){
-			$fields = array(
-				'month' => $month
-			);
-			$response = $this->getData($url,$fields);
-		}else{
-			$response = $this->getData($url);
-		}
-		return $response;
-	}
 
 	/**
 	* Tournament Schedule API:
