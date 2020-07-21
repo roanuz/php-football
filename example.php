@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . '/vendor/autoload.php'; // Autoload files using Composer autoload
-$phpFootball = new PhpFootball\PhpFootballLib('475d7a656b0473d8f0504f9de1547da1', '8ea049f3492c94b730e1765b24667c1f', 'test_footballapi', 'developer');
+$phpFootball = new PhpFootball\PhpFootballLib('ACCESS_KEY', 'SECRET_KEY', 'APP_ID', 'UNIQUE_DEVICE_ID');
 
 /**
 * NOTE: To access the Roanuz Football API's data, you need Valid Match Keys.
@@ -70,5 +70,5 @@ $phpFootball = new PhpFootball\PhpFootballLib('475d7a656b0473d8f0504f9de1547da1'
 // echo json_encode($getFantasyMatchCreditVariation);
 
 /* Get Fantasy Match Credit Variation*/
-$getFantasyMatchPoint = $phpFootball->getFantasyMatchPoint('1214815992417488898', 'RZ-C-A100');
-echo json_encode($getFantasyMatchPoint);
+// $getFantasyMatchPoint = $phpFootball->getFantasyMatchPoint('1214815992417488898', 'RZ-C-A100');
+// echo json_encode($getFantasyMatchPoint);
