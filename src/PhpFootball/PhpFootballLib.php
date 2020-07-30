@@ -70,7 +70,7 @@ class PhpFootballLib {
 		// Store access token & expire time to a file.
 		$tokenData = array( $this->credentials['device_id'] => 
 							array(
-								'token' => $response['auth']['access_token'],
+								'access_token' => $response['auth']['access_token'],
 								'expires' => $response['auth']['expires'],
 								'deviceId' => $this->credentials['device_id']
 							)
