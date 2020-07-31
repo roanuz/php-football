@@ -96,9 +96,9 @@ class PhpFootballLib {
 			$info = json_decode($infotxt, TRUE);
 			if(time() >= ($info[$deviceCheck]['expires'] )){
 				$this->saveAccessKey();
-				return $info[$deviceCheck]['token'];
+				return $info[$deviceCheck]['access_token'];
 			}else{
-				return $info[$deviceCheck]['token'];
+				return $info[$deviceCheck]['access_token'];
 			}
 		}else{
 			$this->saveAccessKey();
