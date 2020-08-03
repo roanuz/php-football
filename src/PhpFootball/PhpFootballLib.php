@@ -309,8 +309,8 @@ class PhpFootballLib {
 		$fields = array(
 			'model' => $model
 		);
-		$url = 'fantasy-match-credits-variation/' .$match_key;
-		$response = $this->getData($url);
+		$url = 'fantasy-match-points/' .$match_key;
+		$response = $this->getData($url,$fields);
 		return $response;
 	}
 
